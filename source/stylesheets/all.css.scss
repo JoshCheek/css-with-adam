@@ -1,0 +1,39 @@
+/* Layout
+----------------------------------------- */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 940px;
+  width: 90%;
+  overflow: hidden;
+}
+
+h1 {
+  color: rgba(0, 0, 0, .3);
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.column {
+  background: red;
+  float: left;
+  margin-left: 3%;
+  &:first-child {
+    margin-left: 0;
+  }
+  &.one-third {
+    width: 31.3%;
+  }
+}
+
+/* Columns
+----------------------------------------- */

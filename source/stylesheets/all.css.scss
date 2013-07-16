@@ -1,6 +1,7 @@
 /* Variables
 ----------------------------------------- */
-$responsive-width: 640px;
+$mobile-width: 640px;
+$tablet-width: 1200px;
 
 
 
@@ -93,9 +94,36 @@ nav li {
   margin-top: 2.5em;
 }
 
+.newswrapper p {
+  margin: 0 0 1em 0;
+  padding: 0;
+  text-indent: 1.5em;
+}
+
+.newswrapper {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+}
+
 /* Responsive
 ----------------------------------------- */
-@media screen and (max-width: $responsive-width) {
+
+@media screen and (max-width: $tablet-width) {
+  .newswrapper {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .newswrapper {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
+  }
+
   body {
     font-size: 100%;
   }

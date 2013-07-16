@@ -8,6 +8,7 @@
 
 body {
   font-family: sans-serif;
+  font-size:   125%;
 }
 
 .container {
@@ -20,7 +21,7 @@ body {
 h1 {
   color: rgba(0, 0, 0, .3);
   font-weight: bold;
-  font-size: 32px;
+  font-size: 2em;
 }
 
 .column {
@@ -33,15 +34,38 @@ h1 {
   &.one-third {
     width: 31.3%;
   }
+  &.two-thirds {
+    background: green;
+    width: 65.6%;
+  }
+  &.half {
+    background: blue;
+    width: 48.5%;
+  }
+}
+
+.row {
+  margin-bottom: 1em;
+  overflow: hidden;
 }
 
 /* Columns
 ----------------------------------------- */
 @media screen and (max-width: 640px) {
+  body {
+    font-size: 100%;
+  }
+
   .column {
-    &.one-third {
-      margin: 0;
+    &.one-third,
+    &.half,
+    &.two-thirds {
+      margin: 0 0 1em 0;
       width: 100%;
     }
-  }
-}
+   }
+
+   .row .column:last-child {
+     margin-bottom: 0;
+   }
+ }

@@ -37,3 +37,11 @@ h1 {
 
 /* Columns
 ----------------------------------------- */
+@media screen and (max-width: 640px) {
+  .column {
+    &.one-third {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}

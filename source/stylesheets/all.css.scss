@@ -49,6 +49,31 @@ h1 {
   overflow: hidden;
 }
 
+/* Navbar
+----------------------------------------- */
+
+nav {
+  background-color: #333;
+  margin-bottom: 2em;
+}
+
+nav ul {
+  overflow: hidden;
+  padding:  0;
+  margin:   20px 0;
+}
+
+nav li {
+  color:      #fff;
+  float:      left;
+  display:    inline-block;
+  list-style: none;
+  margin-left: 0.75em;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
 /* Columns
 ----------------------------------------- */
 @media screen and (max-width: 640px) {
@@ -67,5 +92,17 @@ h1 {
 
    .row .column:last-child {
      margin-bottom: 0;
+   }
+
+   nav li {
+     float:         none;
+     display:       block;
+     margin-left:   0;
+     text-align:    center;
+     border-bottom: 1px solid #999;
+     padding:       0.5em 0;
+     &:last-child {
+       border-bottom: none;
+     }
    }
  }
